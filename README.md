@@ -1,42 +1,54 @@
 # Toy Blocks
 
-## Installation
-
-1. `git clone repo`
-2. `cd toy-blocks-client-react`
-3. `nvm use`
-4. `npm i`
-5. `npm start`
-6. `npm test`
-
 ## Introduction
 
-Here are the instructions for the React Coding Challenge. Please note that you have 5 days from the time of this email to complete and submit the challenge. Please ensure that you capture a screen recording with audio as you complete the challenge using programs such as Loom or other screen recording software. The recording should be at least full length of the challenge (1 hour and 15 mins). The recording must be on a streaming site - we cannot download large files. The video must include audio of you explaining what you are doing. We will review the recording to grade the challenge.
+A current list of server Nodes where each node has blocks. Used Redux to manage the state of the app to try a new approach of Redux using `builders` and managing the promises status in each function.
 
-Here are the links you will need for the challenge:
-[Figma Link](https://www.figma.com/proto/CCuZ0sjGQ2CQtKvuENHaF8/React-Hiring-Test?node-id=11%3A26922&scaling=min-zoom)
-(You can use "Open in editor" to see the CSS values)
+## Getting Started
 
-## Instructions
+1. Make sure to have installed the last [Node.js](https://nodejs.org).
+2. Clone this repo.
+3. On your terminal, run `npm install` to install all the required dependencies.
+4. Run `npm start` to start the server.
+5. Go to [http://localhost:3000](http://localhost:3000).
 
-The current application is displaying a list of nodes. Don’t worry about what Nodes or Blocks are, just know that a Node has many Blocks. Each node represents a server. Each server implements the same API but returns different data. The important endpoints you will need to know for each server are:
-/api/v1/status
-/api/v1/blocks
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Each node has many blocks and the blocks for each node are returned from the blocks endpoint.
+## Technologies
 
-Currently the application is getting the status for each node and updating the state. We would like you to retrieve the blocks from the endpoint, place them in the state and render them into a list that matches the design.
+- [React](https://facebook.github.io/react/)
+- [Typescript](https://www.typescriptlang.org/)
+  - As a Javascript framework to work with types.
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+  - For managing the local state of some components and to create custom hooks.
+- [Redux](https://reactjs.org/docs/hooks-intro.html)
+  - For Managing the state of the app.
+- [Jest](https://jestjs.io/)
+  - _(Already included with React Create App)_ One of the most used testing library with JavaScript. Used to write unit testing code.
 
-## Acceptance criteria:
-1. Blocks are displayed when opening up the card
-2. Loading, error, empty states are displayed when appropriate
-3. Tests pass and coverage has been added to cover the changes
-4. Implementation matches the design
+## Available Scripts
 
-___
+In the project directory, you can run:
 
-- You have 75 minutes to complete the challenge from the time you begin.
-- Tests are a mandatory part of the challenge, so please include them. Please add full test coverage to account for the features of the challenge, and make sure the full test suite passes.
-- At the end of the challenge please verbally summarize and explain everything you have done, and show your UI work if applicable.
-- Once you’ve completed the challenge, please email me a link to the video.
-- If you are having difficulties with the challenge, please email me for assistance.
+### `npm start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
